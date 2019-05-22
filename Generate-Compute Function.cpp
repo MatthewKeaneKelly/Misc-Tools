@@ -39,6 +39,7 @@ int main() {
 
 float * GenerateFunction()
 {
+	//Generates an array with 100 random numbers to use with the compute function.
 	static float f[100];
 	random_device rd; // obtain a random number from hardware
 	mt19937 eng(rd()); // seed the generator
@@ -57,6 +58,7 @@ float * GenerateFunction()
 
 float ComputeFunction(int N, float X, float *p)
 {
+	//Uses the array of random numbers as a funcion and computes it's value.
 	int j; 
 	float total = p[0], temp;
 	cout << "Your generated function is: \n";
